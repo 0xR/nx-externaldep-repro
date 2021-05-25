@@ -1,8 +1,4 @@
 {
-  "npmScope": "nx-externaldep-repro",
-  "affected": {
-    "defaultBase": "master"
-  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
@@ -10,6 +6,10 @@
     },
     ".eslintrc.json": "*"
   },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "nx-externaldep-repro",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
@@ -18,5 +18,9 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "myapp": {
+      "tags": []
+    }
+  }
 }
